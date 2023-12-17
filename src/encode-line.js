@@ -14,7 +14,7 @@ function encodeLine(str) {
   let count = 1;
   let result = '';
 
-  for (a = 1; a <= str.length; a++) {
+  for (let a = 1; a <= str.length; a++) {
     if (str[a] === str[a - 1]) {
       count += 1;
     } else {

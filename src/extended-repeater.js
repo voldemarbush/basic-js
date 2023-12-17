@@ -31,9 +31,9 @@ function repeater(str, options) {
   if (additionSeparator === undefined) additionSeparator = '|';
   if (additionRepeatTimes === undefined) additionRepeatTimes = 1;
 
-  for (a = 0; a < repeatTimes; a++) {
+  for (let a = 0; a < repeatTimes; a++) {
     result += str;
-    for (b = 0; b < additionRepeatTimes; b++) {
+    for (let b = 0; b < additionRepeatTimes; b++) {
       result +=
         addition + (b === additionRepeatTimes - 1 ? '' : additionSeparator);
     }

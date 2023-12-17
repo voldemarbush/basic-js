@@ -18,7 +18,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function renameFiles(names) {
   const namesObj = {};
   const result = [...names];
-  for (a = 0; a < result.length; a++) {
+  for (let a = 0; a < result.length; a++) {
     if (!namesObj.hasOwnProperty(result[a])) {
       namesObj[result[a]] = 1;
     } else {

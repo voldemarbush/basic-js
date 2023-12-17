@@ -37,7 +37,7 @@ function minesweeper(matrix) {
   ];
   for (row = 0; row < matrix.length; row++) {
     result.push([]);
-    for (col = 0; col < matrix[1].length; col++) {
+    for (let col = 0; col < matrix[1].length; col++) {
       if (matrix[row][col]) {
         result[row][col] = 1;
       } else {

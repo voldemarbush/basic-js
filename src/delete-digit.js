@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function deleteDigit(n) {
   let result = 0;
   let originalString = n.toString();
-  for (a = 0; a < originalString.length; a++) {
+  for (let a = 0; a < originalString.length; a++) {
     const currentNumber = Number(
       originalString.slice(0, a) + originalString.slice(a + 1)
     );
